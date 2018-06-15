@@ -6,7 +6,7 @@ function Pizza(size, topping) {
   this.topping = topping;
 }
 
-Movie.prototype.total = function() {
+Pizza.prototype.total = function() {
 
 return
 }
@@ -20,7 +20,9 @@ $(document).ready(function() {
       return this.siz
     }
     var selectedSize = $("select#pizza-size").val();
-    var selectedToppings = $("select#movie-titles").val();
+    console.log(selectedSize);
+    var selectedToppings = $('input[type=checkbox]').attr('checked');
+    console.log(selectedToppings).show();
     var total= "";
-  }
-})
+  });
+});
