@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Pizza</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Pizza Delivery</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Prices</h2>
+        <ul>
+          <li>Small:$7 </li>
+          <li>Medium:10$</li>
+          <li>Large:$13</li>
+          <li><em>Each topping: $1</em></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h2><strong>Your order:</strong></h2>
+        <form id="form-pizza">
+          <div class="form-group">
+            <label for="pizza-size"><strong>Choose your size:</strong></label>
+            <select class="form-control" id="pizza-size">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+
+            </select>
+          </div>
+          <br>
+          <h3> Choose your toppings: </h3>
+          <label class="checkbox-inline"><input type="checkbox" value="pepperoni">Pepperoni</label>
+          <label class="checkbox-inline"><input type="checkbox" value="olives">Olives</label>
+          <label class="checkbox-inline"><input type="checkbox" value="anchovies">Anchovies</label>
+          <label class="checkbox-inline"><input type="checkbox" value="cheese">Cheese</label>
+
+        </div>
+
+        <button type="submit" class="btn">Proceed to checkout!</button>
+      </form>
+
+
+
+    </div>
+
+    <div class="row">
+      <div class="col-6-md" id="show-order">
+      <h5> Confirm:</h5>
+      <p>Size:<span> </span class="size-choice">   </span></p>
+      <p>Toppings:<span class="total-toppings"> </span></p>
+      <p>Total:<span class="total-cost"> </span></p>
+
+    </div>
+
+  </div>
+  <!-- <h2>Confirm your order:</h2>
+  <ul id="movie-purchase">
+
+  </ul>
+  <div class="col-md-6">
+    <div id="show-movie">
+      <h2></h2>
+      <p>Movie: <span class="movie-name"></span></p>
+      <p>Time: <span class="movie-time"></span></p>
+      <p># of Adults: <span class="number-of-adults"></span></p>
+      <p># of Children: <span class="number-of-children"></span></p>
+      <p># of Seniors: <span class="number-of-seniors"></span></p>
+      <p>Cost:<span class="movie-cost"></span></p>
+    </ul>
+  </div>
+</div>
+
+
+
+</body>
+</html> -->
