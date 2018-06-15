@@ -38,14 +38,15 @@
             </select>
           </div>
           <br>
-          <h3> Choose your toppings: </h3>
-          <label class="checkbox-inline"><input type="checkbox" value="pepperoni">Pepperoni</label>
-          <label class="checkbox-inline"><input type="checkbox" value="olives">Olives</label>
-          <label class="checkbox-inline"><input type="checkbox" value="anchovies">Anchovies</label>
-          <label class="checkbox-inline"><input type="checkbox" value="cheese">Cheese</label>
+          <label for="pizza-size"><strong>Choose your topping:</strong></label>
+          <select class="form-control" id="pizza-toppings">
+            <option value="cheese">Cheese</option>
+            <option value="pepperoni">Pepperoni</option>
+            <option value="olives">Olives</option>
+
+          </select>
 
         </div>
-
         <button type="submit" class="btn">Proceed to checkout!</button>
       </form>
 

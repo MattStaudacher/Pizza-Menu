@@ -21,8 +21,13 @@ $(document).ready(function() {
     }
     var selectedSize = $("select#pizza-size").val();
     console.log(selectedSize);
-    var selectedToppings = $('input[type=checkbox]').attr('checked');
-    console.log(selectedToppings).show();
+    var selectedToppings = $("select#pizza-toppings").val();
+    console.log(selectedToppings);
     var total= "";
+
+
+    var smallPrice= 7;
+    var mediumPrice= 10;
+    var largePrice= 13;
   });
 });
