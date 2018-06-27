@@ -5,7 +5,7 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery1.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Pizza</title>
+  <title>Pizzza</title>
 </head>
 <body>
   <div class="container">
@@ -38,14 +38,13 @@
             </select>
           </div>
           <br>
-          <label for="pizza-size"><strong>Choose your topping:</strong></label>
-          <select class="form-control" id="pizza-toppings">
-            <option value="cheese">Cheese</option>
-            <option value="pepperoni">Pepperoni</option>
-            <option value="olives">Olives</option>
-
-          </select>
-
+          <div class="form-group">
+            <label for="toppings">Select your toppings</label><br>
+            <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni<br>
+            <input type="checkbox" name="toppings" value="cheese">Cheese<br>
+            <input type="checkbox" name="toppings" value="mushroom">Mushroom<br>
+            <input type="checkbox" name="toppings" value="olives">Olives<br>
+          </div>
         </div>
         <button type="submit" class="btn">Proceed to checkout!</button>
       </form>
@@ -54,34 +53,23 @@
 
     </div>
 
-    <div class="row">
-      <div class="col-6-md" id="show-order">
-      <h5> Confirm:</h5>
-      <p>Size:<span class="size-choice">   </span></p>
-      <p>Toppings:<span class="total-toppings"> </span></p>
-      <p>Total:<span class="total-cost"> </span></p>
 
-    </div>
 
-  </div>
-  <!-- <h2>Confirm your order:</h2>
-  <ul id="movie-purchase">
 
-  </ul>
+
+<div id="pizza-order">
   <div class="col-md-6">
-    <div id="show-movie">
-      <h2></h2>
-      <p>Movie: <span class="movie-name"></span></p>
-      <p>Time: <span class="movie-time"></span></p>
-      <p># of Adults: <span class="number-of-adults"></span></p>
-      <p># of Children: <span class="number-of-children"></span></p>
-      <p># of Seniors: <span class="number-of-seniors"></span></p>
-      <p>Cost:<span class="movie-cost"></span></p>
-    </ul>
+    <div class="panel panel-body">
+      <div class="bill">
+        <h2>Your order</h2>
+        <p>total cost= $<span class="totalCost"></span></p>
+        <ul id="order-total">
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
-
-
+</div>
 
 </body>
-</html> -->
+</html>
