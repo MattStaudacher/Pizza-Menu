@@ -5,11 +5,11 @@ function Pizza(size, topping, cost) {
   this.size = size;
   this.topping = topping;
   this.cost = 0;
-
+debugger;
 
 }
 
-Pizza.prototype.totalCost = function() {
+Pizza.prototype.totalCost = function(){
 
     if(this.toppings<=2 && this.size==="small")
     {
@@ -36,7 +36,9 @@ Pizza.prototype.totalCost = function() {
 
   }
 var totalCost = 0;
-//user interface
+//user
+
+
 $(document).ready(function(){
   $("form#form-pizza").submit(function(event){
     event.preventDefault();
@@ -51,15 +53,16 @@ $(document).ready(function(){
     var newZa= new Pizza(size, topping)
     newZa.totalCost();
     totalCost+=newZa.price;
-    // $(".size").text(newPizza.size);
-    $(".totalCost").text(totalCost);
+    $(".totalCost").show(totalCost);
 
     $("ul#order-total").append("<li>"+"One "+ newZa.size +" "+ "size "+" "+" pizza"+ " with "+ toppingsChecked + " "+": $" +" "+ newZa.cost+ "</li>");
     toppingsChecked=[];
 
 
-alert();
+
+
     $("#pizza-order").trigger("reset");
+
 
 
   });
